@@ -1,0 +1,83 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model User {
+  id        String   @id @default(uuid())
+  username  String   @unique
+  password  String
+  role      String   // "student" | "professor"
+  createdAt DateTime @default(now())
+  
+  student   Student?
+  professor Professor?
+}
+
+model Student {
+  id              String   @id @default(uuid())
+  name            String
+  email           String
+  phone           String
+  birthDate       String
+  weight          Float
+  height          Float
+  objective       String
+  athleteType     String   // "amador" | "profissional"
+  planType        String   // "mensal" | "trimestral" | "anual"
+  paymentDay      Int
+  joinDate        String
+  active          Boolean  @default(true)
+  lastPaymentDate String?
+  
+  userId          String   @unique
+  user            User     @relation(fields: [userId], references: [id])
+  
+  attendance      Attendance[]
+}
+
+model Professor {
+  id       String @id @default(uuid())
+  name     String
+  email    String
+  
+  userId   String @unique
+  user     User   @relation(fields: [userId], references: [id])
+
+  whatsapp  String?
+  instagram String?
+  facebook  String?
+  bio       String?
+  portfolioUrl String?
+  
+  trainingSessions TrainingSession[]
+}
+
+model TrainingSession {
+  id          String   @id @default(uuid())
+  date        String
+  time        String
+  location    String
+  description String?
+  
+  createdBy   String
+  professor   Professor @relation(fields: [createdBy], references: [id])
+  
+  attendance  Attendance[]
+}
+
+model Attendance {
+  id                String   @id @default(uuid())
+  date              String
+  present           Boolean
+  
+  studentId         String
+  student           Student  @relation(fields: [studentId], references: [id])
+  
+  trainingSessionId String?
+  trainingSession   TrainingSession? @relation(fields: [trainingSessionId], references: [id])
+}

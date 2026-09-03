@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RingPro — Meu Plano</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../_shared/base.css">
+  <link rel="stylesheet" href="../_shared/layout.css">
+</head>
+<body>
+  <div class="dashboard-layout">
+    <aside class="sidebar">
+      <div class="sidebar-logo">RINGPRO</div>
+      <nav class="sidebar-nav">
+        <a href="00-Dashboard.html">Meu painel</a>
+        <a href="01-Meu-Plano.html" class="active">Meu plano</a>
+        <a href="02-Modalidades.html">Modalidades</a>
+        <a href="03-Pagamento.html">Pagamento</a>
+        <a href="04-Historico.html">Histórico</a>
+        <a href="05-Perfil.html">Perfil</a>
+      </nav>
+    </aside>
+
+    <div class="dashboard-main">
+      <header class="topbar">
+        <div><strong>Academia Teste</strong><span class="topbar-user"> · aluno@academia-teste.dev</span></div>
+        <button class="btn btn-ghost" type="button">Sair</button>
+      </header>
+
+      <main class="content">
+        <h1 class="page-title">Meu plano</h1>
+        <p class="page-sub">Mensalidade e modalidades incluídas</p>
+
+        <div class="pricing-card featured" style="max-width:400px;">
+          <span class="badge badge-success">Ativo</span>
+          <h2 style="font-family:var(--font-display);font-size:24px;margin:12px 0 4px;">Plano Básico</h2>
+          <div class="pricing-price">R$ 149,90<span style="font-size:14px;color:var(--color-text-muted);">/mês</span></div>
+          <ul class="pricing-features">
+            <li>1 modalidade ativa</li>
+            <li>Próximo vencimento: 10/10/2026</li>
+            <li>Cobrança recorrente no cartão</li>
+          </ul>
+          <a href="03-Pagamento.html" class="btn btn-primary">Alterar forma de pagamento</a>
+        </div>
+
+        <section class="card" style="margin-top:24px;max-width:520px;">
+          <div class="section-title">Modalidades do plano</div>
+          <p style="font-size:14px;margin-top:8px;">Boxe · Muay Thai</p>
+          <a href="02-Modalidades.html" class="btn btn-ghost" style="margin-top:16px;">Gerenciar modalidades</a>
+        </section>
+      </main>
+    </div>
+  </div>
+</body>
+</html>

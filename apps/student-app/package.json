@@ -1,0 +1,27 @@
+{
+  "name": "ringpro-student-app",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Capacitor shell — portal aluno RingPro (UP-504)",
+  "scripts": {
+    "build:web": "npm run build:capacitor --prefix ../../frontend",
+    "sync": "npm run build:web && npx cap sync",
+    "copy": "npx cap copy",
+    "open:android": "npx cap open android",
+    "open:ios": "npx cap open ios",
+    "add:android": "npx cap add android",
+    "add:ios": "npx cap add ios",
+    "run:android": "npm run sync && npx cap run android",
+    "run:ios": "npm run sync && npx cap run ios"
+  },
+  "dependencies": {
+    "@capacitor/android": "^7.4.2",
+    "@capacitor/app": "^7.0.2",
+    "@capacitor/core": "^7.4.2",
+    "@capacitor/ios": "^7.4.2"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^7.4.2",
+    "typescript": "~6.0.2"
+  }
+}

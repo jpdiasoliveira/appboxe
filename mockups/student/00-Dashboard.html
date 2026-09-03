@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RingPro — Portal Aluno</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../_shared/base.css">
+  <link rel="stylesheet" href="../_shared/layout.css">
+</head>
+<body>
+  <div class="dashboard-layout">
+    <aside class="sidebar">
+      <div class="sidebar-logo">RINGPRO</div>
+      <nav class="sidebar-nav">
+        <a href="#" class="active">Meu painel</a>
+        <a href="01-Meu-Plano.html">Meu plano</a>
+        <a href="02-Modalidades.html">Modalidades</a>
+        <a href="03-Pagamento.html">Pagamento</a>
+        <a href="04-Historico.html">Histórico</a>
+        <a href="05-Perfil.html">Perfil</a>
+      </nav>
+    </aside>
+
+    <div class="dashboard-main">
+      <header class="topbar">
+        <div>
+          <strong>Academia Teste</strong>
+          <span class="topbar-user"> · aluno@academia-teste.dev</span>
+        </div>
+        <button class="btn btn-ghost" type="button">Sair</button>
+      </header>
+
+      <main class="content">
+        <h1 class="page-title">Meu painel</h1>
+        <p class="page-sub">Academia Teste</p>
+
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:24px;">
+          <span style="font-size:14px;color:var(--color-text-muted);">Status:</span>
+          <span class="badge badge-success">Ativo</span>
+        </div>
+
+        <div class="kpi-grid">
+          <div class="kpi-card">
+            <div class="kpi-label">Plano atual</div>
+            <div class="kpi-value" style="font-size:22px;">Plano Básico</div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-label">Próximo vencimento</div>
+            <div class="kpi-value" style="font-size:22px;">10/10/2026</div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-label">Modalidades</div>
+            <div class="kpi-value">2</div>
+          </div>
+        </div>
+
+        <section class="card">
+          <h2 style="font-size:16px;margin-bottom:8px;">Fatura pendente</h2>
+          <p style="font-size:14px;color:var(--color-text-muted);margin-bottom:16px;">
+            Mensalidade de outubro — R$ 149,90 · vence em 10/10/2026
+          </p>
+          <div class="actions">
+            <button type="button" class="btn btn-primary">Pagar com PIX</button>
+            <button type="button" class="btn btn-ghost">Ver boleto</button>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+</body>
+</html>

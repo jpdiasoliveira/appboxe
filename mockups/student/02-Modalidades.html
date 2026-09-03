@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RingPro — Modalidades</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../_shared/base.css">
+  <link rel="stylesheet" href="../_shared/layout.css">
+</head>
+<body>
+  <div class="dashboard-layout">
+    <aside class="sidebar">
+      <div class="sidebar-logo">RINGPRO</div>
+      <nav class="sidebar-nav">
+        <a href="00-Dashboard.html">Meu painel</a>
+        <a href="01-Meu-Plano.html">Meu plano</a>
+        <a href="02-Modalidades.html" class="active">Modalidades</a>
+        <a href="03-Pagamento.html">Pagamento</a>
+        <a href="04-Historico.html">Histórico</a>
+        <a href="05-Perfil.html">Perfil</a>
+      </nav>
+    </aside>
+
+    <div class="dashboard-main">
+      <header class="topbar"><div><strong>Academia Teste</strong></div></header>
+
+      <main class="content">
+        <h1 class="page-title">Modalidades</h1>
+        <p class="page-sub">Escolha as modalidades do seu plano (limite: 2)</p>
+
+        <div class="feedback feedback-warning">Seu plano permite até 2 modalidades.</div>
+
+        <div class="panel-grid">
+          <label class="card" style="cursor:pointer;display:block;">
+            <div style="display:flex;justify-content:space-between;align-items:center;">
+              <strong>Boxe</strong>
+              <input type="checkbox" checked>
+            </div>
+            <p class="section-sub" style="margin-top:8px;">Seg, Qua, Sex · 19h</p>
+          </label>
+          <label class="card" style="cursor:pointer;display:block;">
+            <div style="display:flex;justify-content:space-between;align-items:center;">
+              <strong>Muay Thai</strong>
+              <input type="checkbox" checked>
+            </div>
+            <p class="section-sub" style="margin-top:8px;">Ter, Qui · 20h30</p>
+          </label>
+          <label class="card" style="cursor:pointer;display:block;opacity:0.6;">
+            <div style="display:flex;justify-content:space-between;align-items:center;">
+              <strong>Jiu-Jitsu</strong>
+              <input type="checkbox" disabled>
+            </div>
+            <p class="section-sub" style="margin-top:8px;">Indisponível no plano atual</p>
+          </label>
+        </div>
+
+        <div class="actions">
+          <button class="btn btn-primary" type="button">Salvar</button>
+        </div>
+      </main>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RingPro — Alunos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../_shared/base.css">
+  <link rel="stylesheet" href="../_shared/layout.css">
+</head>
+<body>
+  <div class="dashboard-layout">
+    <aside class="sidebar">
+      <div class="sidebar-logo">RINGPRO</div>
+      <nav class="sidebar-nav">
+        <a href="00-Dashboard.html">Dashboard</a>
+        <a href="01-Alunos.html" class="active">Alunos</a>
+        <a href="02-Professores.html">Professores</a>
+        <a href="03-Categorias.html">Categorias</a>
+        <a href="04-Planos.html">Planos</a>
+        <a href="05-Financeiro.html">Financeiro</a>
+        <a href="06-Presenca.html">Presença</a>
+        <a href="07-Configuracoes.html">Configurações</a>
+        <a href="08-Notificacoes.html">Notificações</a>
+      </nav>
+    </aside>
+
+    <div class="dashboard-main">
+      <header class="topbar"><div><strong>Academia Teste</strong></div></header>
+
+      <main class="content">
+        <div class="page-header">
+          <div>
+            <h1 class="page-title">Alunos</h1>
+            <p class="page-sub" style="margin-bottom:0;">Matrículas e status</p>
+          </div>
+          <a href="01.1-Novo-Aluno.html" class="btn btn-primary">Novo aluno</a>
+        </div>
+
+        <div class="toolbar">
+          <input class="input" type="search" placeholder="Buscar aluno…" style="max-width:280px;">
+          <button class="btn btn-ghost" type="button">Filtros</button>
+        </div>
+
+        <div style="display:grid;grid-template-columns:1fr auto;gap:24px;align-items:start;">
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr><th>Nome</th><th>Plano</th><th>Status</th><th>Modalidades</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>João Silva</td><td>Plano Básico</td>
+                  <td><span class="badge badge-success">Ativo</span></td><td>Boxe</td>
+                </tr>
+                <tr class="row-danger">
+                  <td>Maria Costa</td><td>Plano Premium</td>
+                  <td><span class="badge badge-danger">Inadimplente</span></td><td>Muay Thai</td>
+                </tr>
+                <tr>
+                  <td>Pedro Lima</td><td>Experimental</td>
+                  <td><span class="badge badge-warning">Experimental</span></td><td>Boxe</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <aside class="drawer-preview">
+            <strong style="font-size:14px;">Filtros</strong>
+            <p class="section-sub" style="margin:8px 0 16px;">Alunos</p>
+            <label class="label">Status</label>
+            <select class="input" style="margin-bottom:12px;"><option>Todos</option><option>Ativo</option><option>Inadimplente</option></select>
+            <label class="label">Modalidade</label>
+            <select class="input" style="margin-bottom:12px;"><option>Todas</option><option>Boxe</option></select>
+            <div class="actions" style="margin-top:8px;">
+              <button class="btn btn-ghost" type="button">Limpar</button>
+              <button class="btn btn-primary" type="button">Aplicar</button>
+            </div>
+          </aside>
+        </div>
+      </main>
+    </div>
+  </div>
+</body>
+</html>

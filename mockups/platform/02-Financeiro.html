@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RingPro — Financeiro SaaS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../_shared/base.css">
+  <link rel="stylesheet" href="../_shared/layout.css">
+</head>
+<body>
+  <div class="dashboard-layout">
+    <aside class="sidebar">
+      <div class="sidebar-logo">RINGPRO</div>
+      <nav class="sidebar-nav">
+        <a href="00-Dashboard.html">Dashboard</a>
+        <a href="01-Academias.html">Academias</a>
+        <a href="02-Financeiro.html" class="active">Financeiro SaaS</a>
+        <a href="03-Configuracoes.html">Configurações</a>
+        <a href="04-Auditoria.html">Auditoria</a>
+      </nav>
+    </aside>
+
+    <div class="dashboard-main">
+      <header class="topbar">
+        <div><strong>Plataforma RingPro</strong></div>
+        <div class="topbar-actions"><button class="btn btn-ghost" type="button">Exportar</button></div>
+      </header>
+
+      <main class="content">
+        <h1 class="page-title">Financeiro SaaS</h1>
+        <p class="page-sub">Faturas das academias assinantes — não confundir com mensalidade de alunos</p>
+
+        <div class="kpi-grid">
+          <div class="kpi-card">
+            <div class="kpi-label">Recebido no mês</div>
+            <div class="kpi-value">R$ 16.2k</div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-label">Em aberto</div>
+            <div class="kpi-value">R$ 2.1k</div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-label">Inadimplentes</div>
+            <div class="kpi-value">2</div>
+            <div class="kpi-trend negative">suspensão após 15d</div>
+          </div>
+        </div>
+
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr><th>Academia</th><th>Referência</th><th>Valor</th><th>Vencimento</th><th>Status</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Academia Teste</td><td>Set/2026</td><td>R$ 299,00</td><td>05/09/2026</td>
+                <td><span class="badge badge-success">Pago</span></td>
+              </tr>
+              <tr class="row-danger">
+                <td>Fight Club SP</td><td>Set/2026</td><td>R$ 149,00</td><td>20/08/2026</td>
+                <td><span class="badge badge-danger">Atrasado</span></td>
+              </tr>
+              <tr>
+                <td>Dojo Central</td><td>Set/2026</td><td>R$ 299,00</td><td>10/09/2026</td>
+                <td><span class="badge badge-warning">Pendente</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
+    </div>
+  </div>
+</body>
+</html>

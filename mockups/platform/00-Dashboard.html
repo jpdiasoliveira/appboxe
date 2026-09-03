@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RingPro — Plataforma</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../_shared/base.css">
+  <link rel="stylesheet" href="../_shared/layout.css">
+</head>
+<body>
+  <div class="dashboard-layout">
+    <aside class="sidebar">
+      <div class="sidebar-logo">RINGPRO</div>
+      <nav class="sidebar-nav">
+        <a href="00-Dashboard.html" class="active">Dashboard</a>
+        <a href="01-Academias.html">Academias</a>
+        <a href="02-Financeiro.html">Financeiro SaaS</a>
+        <a href="03-Configuracoes.html">Configurações</a>
+        <a href="04-Auditoria.html">Auditoria</a>
+      </nav>
+      <p style="padding:16px 20px 0;font-size:11px;color:var(--color-text-muted);">Dono do SaaS</p>
+    </aside>
+
+    <div class="dashboard-main">
+      <header class="topbar">
+        <div><strong>Plataforma RingPro</strong><span class="topbar-user"> · owner@ringpro.dev</span></div>
+        <div class="topbar-actions"><button class="btn btn-ghost" type="button">Sair</button></div>
+      </header>
+
+      <main class="content">
+        <h1 class="page-title">Dashboard</h1>
+        <p class="page-sub">Visão geral da rede de academias</p>
+
+        <div class="kpi-grid">
+          <div class="kpi-card">
+            <div class="kpi-label">Academias ativas</div>
+            <div class="kpi-value">24</div>
+            <div class="kpi-trend positive">+2 este mês</div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-label">MRR SaaS</div>
+            <div class="kpi-value">R$ 18.4k</div>
+            <div class="kpi-trend positive">+5% vs mês anterior</div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-label">Alunos na rede</div>
+            <div class="kpi-value">3.842</div>
+            <div class="kpi-trend positive">+128 este mês</div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-label">Academias inadimplentes</div>
+            <div class="kpi-value">2</div>
+            <div class="kpi-trend negative">após 15 dias</div>
+          </div>
+        </div>
+
+        <div class="content-grid">
+          <section class="card">
+            <div class="section-title">Receita SaaS por mês</div>
+            <div class="section-sub">Assinaturas das academias</div>
+            <div class="chart-placeholder">Gráfico de barras — MRR</div>
+          </section>
+
+          <section class="card">
+            <div class="section-title">Atalhos</div>
+            <div class="quick-links">
+              <a class="quick-link" href="01.1-Nova-Academia.html">Nova academia</a>
+              <a class="quick-link" href="01-Academias.html">Ver academias</a>
+              <a class="quick-link" href="02-Financeiro.html">Financeiro</a>
+              <a class="quick-link" href="04-Auditoria.html">Auditoria</a>
+            </div>
+          </section>
+        </div>
+
+        <section class="card" style="margin-top:24px;">
+          <div class="section-title">Academias recentes</div>
+          <div class="table-wrapper" style="margin-top:12px;border:none;">
+            <table>
+              <thead>
+                <tr><th>Academia</th><th>Plano SaaS</th><th>Status</th><th>Alunos</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Academia Teste</td><td>Pro</td><td><span class="badge badge-success">Ativa</span></td><td>142</td></tr>
+                <tr class="row-danger"><td>Fight Club SP</td><td>Starter</td><td><span class="badge badge-danger">Suspensa</span></td><td>38</td></tr>
+                <tr><td>Dojo Central</td><td>Pro</td><td><span class="badge badge-success">Ativa</span></td><td>89</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+</body>
+</html>

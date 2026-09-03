@@ -1,0 +1,16 @@
+-- RingPro: enums e extensões
+CREATE EXTENSION IF NOT EXISTS "pgcrypto";
+
+CREATE TYPE user_role AS ENUM (
+  'PLATFORM_OWNER',
+  'SCHOOL_OWNER',
+  'PROFESSOR',
+  'ASSISTANT',
+  'STUDENT'
+);
+
+CREATE TYPE academy_status AS ENUM ('ATIVO', 'INATIVO', 'SUSPENSO');
+
+CREATE TYPE role_status AS ENUM ('ATIVO', 'INATIVO');
+
+CREATE TYPE student_status AS ENUM ('ATIVO', 'INATIVO', 'INADIMPLENTE', 'TRIAL');

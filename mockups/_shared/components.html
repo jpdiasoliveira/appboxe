@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RingPro — Componentes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="layout.css">
+  <style>
+    body { padding: 32px; max-width: 960px; margin: 0 auto; }
+    h1 { font-family: var(--font-display); font-size: 32px; margin-bottom: 8px; }
+    .intro { color: var(--color-text-muted); margin-bottom: 32px; font-size: 14px; }
+    section { margin-bottom: 40px; }
+    section h2 { font-size: 18px; margin-bottom: 16px; border-bottom: 1px solid var(--color-border); padding-bottom: 8px; }
+    .row { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-bottom: 12px; }
+  </style>
+</head>
+<body>
+  <h1>RingPro — Design system</h1>
+  <p class="intro">Referência de componentes para mockups HTML. Tokens em <code>base.css</code> · layout em <code>layout.css</code>.</p>
+
+  <section>
+    <h2>Botões</h2>
+    <div class="row">
+      <button type="button" class="btn btn-primary">Primário</button>
+      <button type="button" class="btn btn-ghost">Ghost</button>
+      <button type="button" class="btn btn-primary" disabled style="opacity:0.5">Desabilitado</button>
+    </div>
+  </section>
+
+  <section>
+    <h2>Inputs</h2>
+    <div style="max-width:360px;">
+      <label class="label" for="demo-email">E-mail</label>
+      <input class="input" id="demo-email" type="email" placeholder="seu@email.com" style="margin-bottom:12px;">
+      <label class="label" for="demo-select">Select</label>
+      <select class="input" id="demo-select"><option>Opção A</option></select>
+    </div>
+  </section>
+
+  <section>
+    <h2>KPI cards</h2>
+    <div class="kpi-grid">
+      <div class="kpi-card">
+        <div class="kpi-label">Receita do mês</div>
+        <div class="kpi-value">R$ 12.450</div>
+        <div class="kpi-trend positive">+8% vs mês anterior</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">Inadimplentes</div>
+        <div class="kpi-value">5</div>
+        <div class="kpi-trend negative">+2 esta semana</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">Alunos ativos</div>
+        <div class="kpi-value">142</div>
+        <div class="kpi-trend positive">+6 este mês</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Badges de status</h2>
+    <div class="row">
+      <span class="badge badge-success">Ativo</span>
+      <span class="badge badge-danger">Inadimplente</span>
+      <span class="badge badge-warning">Experimental</span>
+      <span class="badge badge-muted">Inativo</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Feedback messages</h2>
+    <div class="feedback feedback-success" style="margin-bottom:8px;">Matrícula salva com sucesso.</div>
+    <div class="feedback feedback-error" style="margin-bottom:8px;">Não foi possível gerar o PIX. Tente novamente.</div>
+    <div class="feedback feedback-warning">Fatura vence em 3 dias.</div>
+  </section>
+
+  <section>
+    <h2>Tabela (linha inadimplente)</h2>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr><th>Aluno</th><th>Plano</th><th>Status</th><th>Vencimento</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>João Silva</td><td>Plano Básico</td>
+            <td><span class="badge badge-success">Ativo</span></td>
+            <td>10/09/2026</td>
+          </tr>
+          <tr class="row-danger">
+            <td>Maria Costa</td><td>Plano Premium</td>
+            <td><span class="badge badge-danger">Inadimplente</span></td>
+            <td>28/08/2026</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>Drawer filtros (preview)</h2>
+    <div class="drawer-preview">
+      <strong style="font-size:14px;">Filtros</strong>
+      <p style="font-size:12px;color:var(--color-text-muted);margin:8px 0 16px;">Alunos</p>
+      <label class="label">Status</label>
+      <select class="input" style="margin-bottom:12px;"><option>Todos</option><option>Ativo</option></select>
+      <div class="row" style="margin-top:16px;">
+        <button type="button" class="btn btn-ghost">Limpar</button>
+        <button type="button" class="btn btn-primary">Aplicar</button>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Pricing cards</h2>
+    <div class="pricing-grid">
+      <div class="pricing-card">
+        <strong>Básico</strong>
+        <div class="pricing-price">R$ 149</div>
+        <ul class="pricing-features"><li>1 modalidade</li></ul>
+      </div>
+      <div class="pricing-card featured">
+        <strong>Premium</strong>
+        <div class="pricing-price">R$ 219</div>
+        <ul class="pricing-features"><li>Ilimitado</li></ul>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

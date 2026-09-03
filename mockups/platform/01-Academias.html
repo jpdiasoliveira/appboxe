@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RingPro — Academias</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../_shared/base.css">
+  <link rel="stylesheet" href="../_shared/layout.css">
+</head>
+<body>
+  <div class="dashboard-layout">
+    <aside class="sidebar">
+      <div class="sidebar-logo">RINGPRO</div>
+      <nav class="sidebar-nav">
+        <a href="00-Dashboard.html">Dashboard</a>
+        <a href="01-Academias.html" class="active">Academias</a>
+        <a href="02-Financeiro.html">Financeiro SaaS</a>
+        <a href="03-Configuracoes.html">Configurações</a>
+        <a href="04-Auditoria.html">Auditoria</a>
+      </nav>
+    </aside>
+
+    <div class="dashboard-main">
+      <header class="topbar">
+        <div><strong>Plataforma RingPro</strong></div>
+        <div class="topbar-actions"><button class="btn btn-ghost" type="button">Sair</button></div>
+      </header>
+
+      <main class="content">
+        <div class="page-header">
+          <div>
+            <h1 class="page-title">Academias</h1>
+            <p class="page-sub" style="margin-bottom:0;">Gerencie tenants e planos SaaS</p>
+          </div>
+          <a href="01.1-Nova-Academia.html" class="btn btn-primary">Nova academia</a>
+        </div>
+
+        <div class="toolbar">
+          <input class="input" type="search" placeholder="Buscar por nome ou slug…" style="max-width:320px;">
+          <button class="btn btn-ghost" type="button">Filtros</button>
+        </div>
+
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr><th>Academia</th><th>Slug</th><th>Plano</th><th>Status</th><th>Alunos</th><th></th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Academia Teste</td><td>academia-teste</td><td>Pro</td>
+                <td><span class="badge badge-success">Ativa</span></td><td>142</td>
+                <td><button class="btn btn-ghost" type="button">Abrir</button></td>
+              </tr>
+              <tr class="row-danger">
+                <td>Fight Club SP</td><td>fight-club-sp</td><td>Starter</td>
+                <td><span class="badge badge-danger">Suspensa</span></td><td>38</td>
+                <td><button class="btn btn-ghost" type="button">Abrir</button></td>
+              </tr>
+              <tr>
+                <td>Dojo Central</td><td>dojo-central</td><td>Pro</td>
+                <td><span class="badge badge-success">Ativa</span></td><td>89</td>
+                <td><button class="btn btn-ghost" type="button">Abrir</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
+    </div>
+  </div>
+</body>
+</html>

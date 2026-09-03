@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RingPro — Nova Academia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../_shared/base.css">
+  <link rel="stylesheet" href="../_shared/layout.css">
+</head>
+<body>
+  <div class="dashboard-layout">
+    <aside class="sidebar">
+      <div class="sidebar-logo">RINGPRO</div>
+      <nav class="sidebar-nav">
+        <a href="00-Dashboard.html">Dashboard</a>
+        <a href="01-Academias.html" class="active">Academias</a>
+        <a href="02-Financeiro.html">Financeiro SaaS</a>
+        <a href="03-Configuracoes.html">Configurações</a>
+        <a href="04-Auditoria.html">Auditoria</a>
+      </nav>
+    </aside>
+
+    <div class="dashboard-main">
+      <header class="topbar">
+        <div><strong>Plataforma RingPro</strong></div>
+        <div class="topbar-actions"><a href="01-Academias.html" class="btn btn-ghost">Voltar</a></div>
+      </header>
+
+      <main class="content">
+        <h1 class="page-title">Nova academia</h1>
+        <p class="page-sub">Cria tenant, owner inicial e flags padrão</p>
+
+        <div class="card" style="max-width:640px;">
+          <div class="form-group">
+            <label class="label" for="name">Nome da academia</label>
+            <input class="input" id="name" type="text" placeholder="Academia Exemplo">
+          </div>
+          <div class="form-group">
+            <label class="label" for="slug">Slug (landing)</label>
+            <input class="input" id="slug" type="text" placeholder="academia-exemplo">
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="label" for="owner-email">E-mail do owner</label>
+              <input class="input" id="owner-email" type="email" placeholder="owner@academia.com">
+            </div>
+            <div class="form-group">
+              <label class="label" for="plan">Plano SaaS</label>
+              <select class="input" id="plan"><option>Starter</option><option selected>Pro</option><option>Enterprise</option></select>
+            </div>
+          </div>
+          <div class="feedback feedback-warning">Flags padrão: 8 módulos habilitados (pagamentos, presença, landing).</div>
+          <div class="actions">
+            <button class="btn btn-primary" type="button">Criar academia</button>
+            <a href="01-Academias.html" class="btn btn-ghost">Cancelar</a>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+</body>
+</html>

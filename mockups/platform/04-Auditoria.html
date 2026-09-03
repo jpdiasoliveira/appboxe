@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RingPro — Auditoria</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../_shared/base.css">
+  <link rel="stylesheet" href="../_shared/layout.css">
+</head>
+<body>
+  <div class="dashboard-layout">
+    <aside class="sidebar">
+      <div class="sidebar-logo">RINGPRO</div>
+      <nav class="sidebar-nav">
+        <a href="00-Dashboard.html">Dashboard</a>
+        <a href="01-Academias.html">Academias</a>
+        <a href="02-Financeiro.html">Financeiro SaaS</a>
+        <a href="03-Configuracoes.html">Configurações</a>
+        <a href="04-Auditoria.html" class="active">Auditoria</a>
+      </nav>
+    </aside>
+
+    <div class="dashboard-main">
+      <header class="topbar"><div><strong>Plataforma RingPro</strong></div></header>
+
+      <main class="content">
+        <h1 class="page-title">Auditoria</h1>
+        <p class="page-sub">Log de ações sensíveis na plataforma</p>
+
+        <div class="toolbar">
+          <select class="input" style="max-width:200px;"><option>Todos os eventos</option><option>Academia criada</option><option>Plano alterado</option></select>
+          <input class="input" type="date" style="max-width:160px;">
+        </div>
+
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr><th>Data</th><th>Ator</th><th>Evento</th><th>Detalhe</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>02/09/2026 14:32</td><td>owner@ringpro.dev</td><td>academy.created</td><td>Dojo Central (pro)</td>
+              </tr>
+              <tr>
+                <td>01/09/2026 09:10</td><td>finance@ringpro.dev</td><td>saas_invoice.paid</td><td>Academia Teste — R$ 299</td>
+              </tr>
+              <tr>
+                <td>28/08/2026 18:45</td><td>sistema</td><td>academy.suspended</td><td>Fight Club SP — inadimplência 15d</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
+    </div>
+  </div>
+</body>
+</html>

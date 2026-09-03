@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RingPro — Novo Aluno</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../_shared/base.css">
+  <link rel="stylesheet" href="../_shared/layout.css">
+</head>
+<body>
+  <div class="dashboard-layout">
+    <aside class="sidebar">
+      <div class="sidebar-logo">RINGPRO</div>
+      <nav class="sidebar-nav">
+        <a href="00-Dashboard.html">Dashboard</a>
+        <a href="01-Alunos.html" class="active">Alunos</a>
+        <a href="02-Professores.html">Professores</a>
+        <a href="03-Categorias.html">Categorias</a>
+        <a href="04-Planos.html">Planos</a>
+        <a href="05-Financeiro.html">Financeiro</a>
+        <a href="06-Presenca.html">Presença</a>
+        <a href="07-Configuracoes.html">Configurações</a>
+        <a href="08-Notificacoes.html">Notificações</a>
+      </nav>
+    </aside>
+
+    <div class="dashboard-main">
+      <header class="topbar">
+        <div><strong>Academia Teste</strong></div>
+        <div class="topbar-actions"><a href="01-Alunos.html" class="btn btn-ghost">Voltar</a></div>
+      </header>
+
+      <main class="content">
+        <h1 class="page-title">Convidar aluno</h1>
+        <p class="page-sub">Envio por e-mail — aluno completa cadastro e pagamento no portal</p>
+
+        <div class="card" style="max-width:520px;">
+          <div class="form-group">
+            <label class="label" for="email">E-mail do aluno</label>
+            <input class="input" id="email" type="email" placeholder="aluno@email.com">
+          </div>
+          <div class="form-group">
+            <label class="label" for="name">Nome (opcional)</label>
+            <input class="input" id="name" type="text" placeholder="Nome para pré-preencher">
+          </div>
+          <div class="feedback feedback-success">Convite enviado — link válido por 7 dias.</div>
+          <div class="actions">
+            <button class="btn btn-primary" type="button">Enviar convite</button>
+            <button class="btn btn-ghost" type="button">Copiar link</button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+</body>
+</html>

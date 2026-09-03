@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RingPro — Trocar senha</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../_shared/base.css">
+  <style>
+    .form-group { margin-bottom: 16px; }
+    .btn-submit { width: 100%; margin-top: 8px; padding: 12px; }
+    .hint { font-size: 13px; color: var(--color-text-muted); margin-bottom: 20px; line-height: 1.5; }
+  </style>
+</head>
+<body>
+  <div class="auth-layout">
+    <div class="auth-card card">
+      <div class="auth-logo">
+        <h1>RINGPRO</h1>
+        <p>Defina uma nova senha</p>
+      </div>
+
+      <p class="hint">Por segurança, você precisa trocar a senha no primeiro acesso.</p>
+
+      <form>
+        <div class="form-group">
+          <label class="label" for="password">Nova senha</label>
+          <input class="input" type="password" id="password" placeholder="Mínimo 8 caracteres" required>
+        </div>
+        <div class="form-group">
+          <label class="label" for="password2">Confirmar senha</label>
+          <input class="input" type="password" id="password2" placeholder="Repita a senha" required>
+        </div>
+        <button type="submit" class="btn btn-primary btn-submit">Salvar e continuar</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

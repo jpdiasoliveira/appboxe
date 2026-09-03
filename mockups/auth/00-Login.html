@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RingPro — Login</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../_shared/base.css">
+  <style>
+    .form-group { margin-bottom: 16px; }
+    .form-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 8px;
+      font-size: 13px;
+    }
+    .form-footer a { color: var(--color-primary); text-decoration: none; }
+    .form-footer a:hover { text-decoration: underline; }
+    .btn-submit { width: 100%; margin-top: 8px; padding: 12px; }
+    .divider {
+      text-align: center;
+      color: var(--color-text-muted);
+      font-size: 12px;
+      margin: 24px 0;
+      position: relative;
+    }
+    .divider::before, .divider::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      width: 40%;
+      height: 1px;
+      background: var(--color-border);
+    }
+    .divider::before { left: 0; }
+    .divider::after { right: 0; }
+  </style>
+</head>
+<body>
+  <div class="auth-layout">
+    <div class="auth-card card">
+      <div class="auth-logo">
+        <h1>RINGPRO</h1>
+        <p>Gestão de academias de artes marciais</p>
+      </div>
+
+      <form>
+        <div class="form-group">
+          <label class="label" for="email">E-mail</label>
+          <input class="input" type="email" id="email" placeholder="seu@email.com">
+        </div>
+
+        <div class="form-group">
+          <label class="label" for="password">Senha</label>
+          <input class="input" type="password" id="password" placeholder="••••••••">
+        </div>
+
+        <div class="form-footer">
+          <label style="display:flex;align-items:center;gap:6px;color:var(--color-text-muted);cursor:pointer;">
+            <input type="checkbox"> Lembrar-me
+          </label>
+          <a href="01-Esqueci-Senha.html">Esqueci minha senha</a>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-submit">Entrar</button>
+      </form>
+
+      <div class="divider">ou</div>
+
+      <p style="text-align:center;font-size:13px;color:var(--color-text-muted);">
+        Problemas para acessar? Contate o administrador da sua academia.
+      </p>
+    </div>
+  </div>
+</body>
+</html>

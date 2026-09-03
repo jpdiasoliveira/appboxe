@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RingPro — Planos de Mensalidade</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../_shared/base.css">
+  <link rel="stylesheet" href="../_shared/layout.css">
+</head>
+<body>
+  <div class="dashboard-layout">
+    <aside class="sidebar">
+      <div class="sidebar-logo">RINGPRO</div>
+      <nav class="sidebar-nav">
+        <a href="00-Dashboard.html">Dashboard</a>
+        <a href="01-Alunos.html">Alunos</a>
+        <a href="02-Professores.html">Professores</a>
+        <a href="03-Categorias.html">Categorias</a>
+        <a href="04-Planos.html" class="active">Planos</a>
+        <a href="05-Financeiro.html">Financeiro</a>
+        <a href="06-Presenca.html">Presença</a>
+        <a href="07-Configuracoes.html">Configurações</a>
+        <a href="08-Notificacoes.html">Notificações</a>
+      </nav>
+    </aside>
+
+    <div class="dashboard-main">
+      <header class="topbar"><div><strong>Academia Teste</strong></div></header>
+
+      <main class="content">
+        <div class="page-header">
+          <div>
+            <h1 class="page-title">Planos de mensalidade</h1>
+            <p class="page-sub" style="margin-bottom:0;">Não confundir com plano SaaS da plataforma</p>
+          </div>
+          <button class="btn btn-primary" type="button">Novo plano</button>
+        </div>
+
+        <div class="pricing-grid">
+          <div class="pricing-card">
+            <strong>Plano Básico</strong>
+            <div class="pricing-price">R$ 149<span style="font-size:14px;color:var(--color-text-muted);">/mês</span></div>
+            <ul class="pricing-features"><li>1 modalidade</li><li>Acesso à agenda</li><li>72 alunos</li></ul>
+            <span class="badge badge-success">Ativo</span>
+          </div>
+          <div class="pricing-card featured">
+            <strong>Plano Premium</strong>
+            <div class="pricing-price">R$ 219<span style="font-size:14px;color:var(--color-text-muted);">/mês</span></div>
+            <ul class="pricing-features"><li>Modalidades ilimitadas</li><li>Reposição de aula</li><li>48 alunos</li></ul>
+            <span class="badge badge-success">Ativo</span>
+          </div>
+          <div class="pricing-card">
+            <strong>Experimental</strong>
+            <div class="pricing-price">R$ 0<span style="font-size:14px;color:var(--color-text-muted);"> · 7 dias</span></div>
+            <ul class="pricing-features"><li>Trial configurável</li><li>1 modalidade</li></ul>
+            <span class="badge badge-warning">Trial</span>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+</body>
+</html>

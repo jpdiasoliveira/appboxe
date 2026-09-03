@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RingPro — Dashboard Assistant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../_shared/base.css">
+  <link rel="stylesheet" href="../_shared/layout.css">
+</head>
+<body>
+  <div class="dashboard-layout">
+    <aside class="sidebar">
+      <div class="sidebar-logo">RINGPRO</div>
+      <nav class="sidebar-nav">
+        <a href="00-Dashboard-Assistant.html" class="active">Dashboard</a>
+        <a href="01-Alunos.html">Alunos</a>
+        <a href="02-Professores.html">Professores</a>
+        <a href="03-Categorias.html">Categorias</a>
+        <a href="06-Presenca.html">Presença</a>
+        <a href="08-Notificacoes.html">Notificações</a>
+      </nav>
+      <p style="padding:16px 20px 0;font-size:11px;color:var(--color-text-muted);">Assistant · sem financeiro</p>
+    </aside>
+
+    <div class="dashboard-main">
+      <header class="topbar">
+        <div><strong>Academia Teste</strong><span class="topbar-user"> · assistant@academia-teste.dev</span></div>
+        <div class="topbar-actions"><button class="btn btn-ghost" type="button">Sair</button></div>
+      </header>
+
+      <main class="content">
+        <h1 class="page-title">Dashboard</h1>
+        <p class="page-sub">Operação diária — sem KPIs nem menu financeiro</p>
+
+        <div class="kpi-grid" style="grid-template-columns:repeat(3,minmax(0,1fr));">
+          <div class="kpi-card">
+            <div class="kpi-label">Alunos ativos</div>
+            <div class="kpi-value">142</div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-label">Novos leads</div>
+            <div class="kpi-value">8</div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-label">Presenças hoje</div>
+            <div class="kpi-value">38</div>
+          </div>
+        </div>
+
+        <section class="card">
+          <div class="section-title">Atalhos</div>
+          <div class="quick-links">
+            <a class="quick-link" href="01.1-Novo-Aluno.html">Convidar aluno</a>
+            <a class="quick-link" href="06-Presenca.html">Chamada</a>
+            <a class="quick-link" href="01-Alunos.html">Lista de alunos</a>
+          </div>
+        </section>
+
+        <p style="margin-top:24px;font-size:12px;color:var(--color-text-muted);">
+          ASSISTANT: sem Planos, Financeiro, Configurações de cobrança ou Landing editor.
+        </p>
+      </main>
+    </div>
+  </div>
+</body>
+</html>

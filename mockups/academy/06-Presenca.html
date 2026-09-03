@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RingPro — Presença</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../_shared/base.css">
+  <link rel="stylesheet" href="../_shared/layout.css">
+</head>
+<body>
+  <div class="dashboard-layout">
+    <aside class="sidebar">
+      <div class="sidebar-logo">RINGPRO</div>
+      <nav class="sidebar-nav">
+        <a href="00-Dashboard.html">Dashboard</a>
+        <a href="01-Alunos.html">Alunos</a>
+        <a href="02-Professores.html">Professores</a>
+        <a href="03-Categorias.html">Categorias</a>
+        <a href="04-Planos.html">Planos</a>
+        <a href="05-Financeiro.html">Financeiro</a>
+        <a href="06-Presenca.html" class="active">Presença</a>
+        <a href="07-Configuracoes.html">Configurações</a>
+        <a href="08-Notificacoes.html">Notificações</a>
+      </nav>
+    </aside>
+
+    <div class="dashboard-main">
+      <header class="topbar"><div><strong>Academia Teste</strong></div></header>
+
+      <main class="content">
+        <div class="page-header">
+          <div>
+            <h1 class="page-title">Chamada de presença</h1>
+            <p class="page-sub" style="margin-bottom:0;">Boxe · 03/09/2026 · 19:00</p>
+          </div>
+          <button class="btn btn-primary" type="button">QR check-in</button>
+        </div>
+
+        <div class="feedback feedback-success">Presença salva — 12 alunos marcados.</div>
+
+        <div class="table-wrapper">
+          <table>
+            <thead><tr><th></th><th>Aluno</th><th>Status</th><th>Plano</th></tr></thead>
+            <tbody>
+              <tr><td><input type="checkbox" checked></td><td>João Silva</td><td><span class="badge badge-success">Presente</span></td><td>Básico</td></tr>
+              <tr><td><input type="checkbox" checked></td><td>Maria Costa</td><td><span class="badge badge-success">Presente</span></td><td>Premium</td></tr>
+              <tr class="row-danger"><td><input type="checkbox"></td><td>Pedro Lima</td><td><span class="badge badge-danger">Inadimplente</span></td><td>Experimental</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="actions">
+          <button class="btn btn-primary" type="button">Salvar chamada</button>
+        </div>
+      </main>
+    </div>
+  </div>
+</body>
+</html>

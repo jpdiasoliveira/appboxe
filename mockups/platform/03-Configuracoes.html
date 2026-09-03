@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RingPro — Configurações Plataforma</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../_shared/base.css">
+  <link rel="stylesheet" href="../_shared/layout.css">
+</head>
+<body>
+  <div class="dashboard-layout">
+    <aside class="sidebar">
+      <div class="sidebar-logo">RINGPRO</div>
+      <nav class="sidebar-nav">
+        <a href="00-Dashboard.html">Dashboard</a>
+        <a href="01-Academias.html">Academias</a>
+        <a href="02-Financeiro.html">Financeiro SaaS</a>
+        <a href="03-Configuracoes.html" class="active">Configurações</a>
+        <a href="04-Auditoria.html">Auditoria</a>
+      </nav>
+    </aside>
+
+    <div class="dashboard-main">
+      <header class="topbar"><div><strong>Plataforma RingPro</strong></div></header>
+
+      <main class="content">
+        <h1 class="page-title">Configurações</h1>
+        <p class="page-sub">Parâmetros globais do SaaS</p>
+
+        <div class="panel-grid">
+          <section class="card">
+            <div class="section-title">Planos SaaS</div>
+            <p class="section-sub" style="margin-bottom:16px;">Starter, Pro, Enterprise</p>
+            <div class="pricing-grid">
+              <div class="pricing-card">
+                <strong>Starter</strong>
+                <div class="pricing-price">R$ 149</div>
+                <ul class="pricing-features"><li>Até 80 alunos</li><li>Landing básica</li></ul>
+              </div>
+              <div class="pricing-card featured">
+                <strong>Pro</strong>
+                <div class="pricing-price">R$ 299</div>
+                <ul class="pricing-features"><li>Até 300 alunos</li><li>Todos os módulos</li></ul>
+              </div>
+            </div>
+          </section>
+
+          <section class="card">
+            <div class="section-title">Equipe plataforma</div>
+            <p class="section-sub" style="margin-bottom:16px;">Convites SUPPORT / FINANCE</p>
+            <button class="btn btn-primary" type="button">Convidar membro</button>
+          </section>
+
+          <section class="card" style="grid-column:1/-1;">
+            <div class="section-title">Feature flags globais</div>
+            <div class="form-group" style="margin-top:16px;">
+              <label style="display:flex;align-items:center;gap:8px;font-size:14px;">
+                <input type="checkbox" checked> Kill switch SaaS (suspender academias inadimplentes)
+              </label>
+            </div>
+            <div class="actions">
+              <button class="btn btn-primary" type="button">Salvar</button>
+            </div>
+            <div class="feedback feedback-success" style="margin-top:16px;margin-bottom:0;">Configurações salvas.</div>
+          </section>
+        </div>
+      </main>
+    </div>
+  </div>
+</body>
+</html>

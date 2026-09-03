@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RingPro — Pagamento</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../_shared/base.css">
+  <link rel="stylesheet" href="../_shared/layout.css">
+  <style>
+    .pay-tabs { display:flex; gap:8px; margin-bottom:24px; flex-wrap:wrap; }
+    .pay-tab {
+      padding:10px 16px; border-radius:var(--radius-md); border:1px solid var(--color-border);
+      background:var(--color-bg-elevated); font-size:14px; font-weight:600; cursor:pointer;
+    }
+    .pay-tab.active { border-color:var(--color-primary); background:rgb(185 28 28 / 0.15); }
+  </style>
+</head>
+<body>
+  <div class="dashboard-layout">
+    <aside class="sidebar">
+      <div class="sidebar-logo">RINGPRO</div>
+      <nav class="sidebar-nav">
+        <a href="00-Dashboard.html">Meu painel</a>
+        <a href="01-Meu-Plano.html">Meu plano</a>
+        <a href="02-Modalidades.html">Modalidades</a>
+        <a href="03-Pagamento.html" class="active">Pagamento</a>
+        <a href="04-Historico.html">Histórico</a>
+        <a href="05-Perfil.html">Perfil</a>
+      </nav>
+    </aside>
+
+    <div class="dashboard-main">
+      <header class="topbar"><div><strong>Academia Teste</strong></div></header>
+
+      <main class="content">
+        <h1 class="page-title">Pagamento</h1>
+        <p class="page-sub">Fatura outubro/2026 — R$ 149,90 · vence 10/10/2026</p>
+
+        <div class="pay-tabs">
+          <button class="pay-tab active" type="button">PIX</button>
+          <button class="pay-tab" type="button">Cartão</button>
+          <button class="pay-tab" type="button">Boleto</button>
+        </div>
+
+        <div class="card" style="max-width:480px;">
+          <div class="section-title">Pagar com PIX</div>
+          <p class="section-sub" style="margin:8px 0 16px;">QR Code gerado via gateway — tokenizado, sem dados de cartão no servidor RingPro</p>
+          <div class="chart-placeholder" style="min-height:180px;">QR Code PIX</div>
+          <div class="form-group" style="margin-top:16px;">
+            <label class="label">Copia e cola</label>
+            <input class="input" type="text" value="00020126580014br.gov.bcb.pix..." readonly>
+          </div>
+          <div class="feedback feedback-success">Pagamento confirmado — status Ativo.</div>
+        </div>
+
+        <p style="margin-top:24px;font-size:12px;color:var(--color-text-muted);">
+          Apenas o aluno cadastra cartão no próprio portal — professor nunca coleta PCI.
+        </p>
+      </main>
+    </div>
+  </div>
+</body>
+</html>

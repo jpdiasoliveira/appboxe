@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RingPro — Dashboard Professor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../_shared/base.css">
+  <link rel="stylesheet" href="../_shared/layout.css">
+  <style>
+  .professor-note {
+    font-size: 14px;
+    color: var(--color-text-muted);
+    margin-bottom: 24px;
+  }
+  .content-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  @media (min-width: 1200px) {
+    .content-grid { grid-template-columns: 2fr 1fr; align-items: start; }
+  }
+  .panel-grid {
+    display: grid;
+    gap: 16px;
+  }
+  @media (min-width: 900px) {
+    .panel-grid { grid-template-columns: 1fr 1fr; }
+  }
+  .chart-placeholder {
+    min-height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-text-muted);
+    font-size: 13px;
+    border: 1px dashed var(--color-border);
+    border-radius: var(--radius-md);
+    margin-top: 12px;
+  }
+  .quick-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 12px;
+    margin-top: 12px;
+  }
+  .quick-link {
+    padding: 14px;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--color-border);
+    background: var(--color-bg-elevated);
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+  }
+  .birthday-list, .session-list {
+    list-style: none;
+    margin-top: 12px;
+  }
+  .birthday-list li, .session-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--color-border);
+    font-size: 14px;
+  }
+  .birthday-list li:last-child, .session-list li:last-child { border-bottom: none; }
+  .calendar-mini {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 4px;
+    margin-top: 12px;
+    font-size: 12px;
+    text-align: center;
+  }
+  .calendar-mini span {
+    padding: 8px 4px;
+    border-radius: var(--radius-sm);
+  }
+  .calendar-mini .today {
+    background: rgb(185 28 28 / 0.2);
+    color: var(--color-primary);
+    font-weight: 700;
+  }
+  .calendar-mini .has-session {
+    box-shadow: inset 0 -2px 0 var(--color-secondary);
+  }
+  .topbar-user {
+    font-size: 13px;
+    color: var(--color-text-muted);
+  }
+  .section-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  .section-sub {
+    font-size: 12px;
+    color: var(--color-text-muted);
+  }
+  </style>
+</head>
+<body>
+  <div class="dashboard-layout">
+    <aside class="sidebar">
+      <div class="sidebar-logo">RINGPRO</div>
+      <nav class="sidebar-nav">
+        <a href="00-Dashboard-Professor.html" class="active">Dashboard</a>
+        <a href="01-Alunos.html">Alunos</a>
+        <a href="03-Categorias.html">Categorias</a>
+        <a href="06-Presenca.html">Presença</a>
+        <a href="08-Notificacoes.html">Notificações</a>
+      </nav>
+      <p style="padding: 16px 20px 0; font-size: 11px; color: var(--color-text-muted);">
+        Professor · escopo Boxe / Muay Thai
+      </p>
+    </aside>
+
+    <div class="dashboard-main">
+      <header class="topbar">
+        <div>
+          <strong>Academia Teste</strong>
+          <span class="topbar-user"> · professor@academia-teste.dev</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:12px;">
+          <span class="badge badge-warning">2 não lidas</span>
+          <button class="btn btn-ghost" type="button">Sair</button>
+        </div>
+      </header>
+
+      <main class="content">
+        <h1 style="font-family:var(--font-display);font-size:28px;margin-bottom:8px;">Dashboard Academia</h1>
+        <p class="professor-note">
+          Visão das suas turmas — sem dados financeiros da academia.
+        </p>
+
+        <div class="kpi-grid" style="grid-template-columns: repeat(3, minmax(0, 1fr));">
+          <div class="kpi-card">
+            <div class="kpi-label">Alunos ativos</div>
+            <div class="kpi-value">18</div>
+            <div class="kpi-trend positive">+2 este mês</div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-label">Inadimplentes</div>
+            <div class="kpi-value">3</div>
+            <div class="kpi-trend negative">nas suas turmas</div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-label">Presenças hoje</div>
+            <div class="kpi-value">12</div>
+            <div class="kpi-trend">Boxe 19h</div>
+          </div>
+        </div>
+
+        <div class="content-grid">
+          <div class="panel-grid">
+            <section class="card">
+              <div class="section-title">Alunos ativos por mês</div>
+              <div class="section-sub">Somente modalidades vinculadas ao professor</div>
+              <div class="chart-placeholder">Gráfico de linha — escopo professor</div>
+            </section>
+
+            <section class="card">
+              <div class="section-title">Aniversários próximos</div>
+              <div class="section-sub">Próximos 30 dias</div>
+              <ul class="birthday-list">
+                <li><span>João Silva</span><span>05/09</span></li>
+                <li><span>Maria Costa</span><span>12/09</span></li>
+                <li><span>Pedro Lima</span><span>18/09</span></li>
+              </ul>
+            </section>
+
+            <section class="card" style="grid-column: 1 / -1;">
+              <div class="section-title">Atalhos</div>
+              <div class="quick-links">
+                <div class="quick-link">Chamada de presença</div>
+                <div class="quick-link">Novo aluno</div>
+                <div class="quick-link">Agenda da semana</div>
+                <div class="quick-link">Ver alunos</div>
+              </div>
+            </section>
+          </div>
+
+          <aside class="card">
+            <div class="section-title">Setembro 2026</div>
+            <div class="calendar-mini">
+              <span>D</span><span>S</span><span>T</span><span>Q</span><span>Q</span><span>S</span><span>S</span>
+              <span></span><span>1</span><span>2</span><span class="today has-session">3</span><span>4</span><span>5</span><span>6</span>
+              <span>7</span><span>8</span><span>9</span><span>10</span><span class="has-session">11</span><span>12</span><span>13</span>
+            </div>
+
+            <div style="margin-top:20px;">
+              <div class="section-title">Hoje — 03/09</div>
+              <ul class="session-list">
+                <li>
+                  <span>Boxe · 19:00</span>
+                  <span class="badge badge-success">14 alunos</span>
+                </li>
+                <li>
+                  <span>Muay Thai · 20:30</span>
+                  <span class="badge badge-muted">Plano pendente</span>
+                </li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+
+        <p style="margin-top:24px;font-size:12px;color:var(--color-text-muted);">
+          Mockup UP-320 — sem KPI de receita; menu sem Financeiro, Planos, Professores, Configurações, Landing ou Leads.
+        </p>
+      </main>
+    </div>
+  </div>
+</body>
+</html>

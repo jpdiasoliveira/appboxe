@@ -1,0 +1,30 @@
+# Dependências e build
+node_modules/
+dist/
+build/
+.vite/
+
+# Ambiente — NUNCA commitar
+.env
+.env.local
+.env.*.local
+
+# Supabase local
+.supabase/
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Testes
+coverage/
+frontend/test-results/
+frontend/playwright-report/
+frontend/blob-report/

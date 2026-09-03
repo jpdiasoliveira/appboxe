@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RingPro — Editor Landing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../_shared/base.css">
+  <link rel="stylesheet" href="../_shared/layout.css">
+  <style>
+    .editor-layout { display:grid; grid-template-columns:320px 1fr; min-height:100vh; }
+    @media (max-width:900px) { .editor-layout { grid-template-columns:1fr; } }
+    .editor-panel { border-right:1px solid var(--color-border); padding:24px; background:var(--color-accent); }
+    .editor-preview { background:var(--color-bg); }
+    .editor-preview iframe { width:100%; height:100%; min-height:80vh; border:none; }
+  </style>
+</head>
+<body>
+  <div class="editor-layout">
+    <aside class="editor-panel">
+      <a href="../academy/07-Configuracoes.html" style="font-size:13px;color:var(--color-text-muted);text-decoration:none;">← Configurações</a>
+      <h1 class="page-title" style="margin-top:16px;font-size:22px;">Editor landing</h1>
+      <p class="page-sub">Módulo `module_landing` · slug academia-teste</p>
+
+      <div class="form-group">
+        <label class="label" for="hero-title">Título hero</label>
+        <input class="input" id="hero-title" type="text" value="FORÇA. DISCIPLINA. RINGPRO.">
+      </div>
+      <div class="form-group">
+        <label class="label" for="hero-sub">Subtítulo</label>
+        <textarea class="input" id="hero-sub" rows="3">Boxe e Muay Thai com professores experientes.</textarea>
+      </div>
+      <div class="form-group">
+        <label class="label" for="cta">Texto do CTA</label>
+        <input class="input" id="cta" type="text" value="Quero me matricular">
+      </div>
+      <label style="display:flex;gap:8px;font-size:14px;margin-bottom:16px;">
+        <input type="checkbox" checked> Exibir seção planos
+      </label>
+      <label style="display:flex;gap:8px;font-size:14px;margin-bottom:16px;">
+        <input type="checkbox" checked> Formulário de lead
+      </label>
+
+      <div class="actions">
+        <button class="btn btn-primary" type="button">Publicar</button>
+        <a href="00-Template.html" target="_blank" class="btn btn-ghost">Pré-visualizar</a>
+      </div>
+      <div class="feedback feedback-success">Landing publicada em /a/academia-teste</div>
+    </aside>
+
+    <div class="editor-preview">
+      <div style="padding:12px 16px;border-bottom:1px solid var(--color-border);font-size:13px;color:var(--color-text-muted);">
+        Preview · <a href="00-Template.html" target="_blank" style="color:var(--color-primary);">abrir em nova aba</a>
+      </div>
+      <iframe src="00-Template.html" title="Preview landing"></iframe>
+    </div>
+  </div>
+</body>
+</html>

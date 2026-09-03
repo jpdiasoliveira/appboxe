@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RingPro — Esqueci minha senha</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../_shared/base.css">
+  <style>
+    .form-group { margin-bottom: 16px; }
+    .btn-submit { width: 100%; margin-top: 8px; padding: 12px; }
+    .back-link { display: block; text-align: center; margin-top: 20px; font-size: 13px; color: var(--color-primary); text-decoration: none; }
+    .back-link:hover { text-decoration: underline; }
+    .hint { font-size: 13px; color: var(--color-text-muted); margin-bottom: 20px; line-height: 1.5; }
+  </style>
+</head>
+<body>
+  <div class="auth-layout">
+    <div class="auth-card card">
+      <div class="auth-logo">
+        <h1>RINGPRO</h1>
+        <p>Recuperar acesso</p>
+      </div>
+
+      <p class="hint">Informe o e-mail cadastrado. Enviaremos um link para redefinir sua senha.</p>
+
+      <form>
+        <div class="form-group">
+          <label class="label" for="email">E-mail</label>
+          <input class="input" type="email" id="email" placeholder="seu@email.com" required>
+        </div>
+        <button type="submit" class="btn btn-primary btn-submit">Enviar link</button>
+      </form>
+
+      <a class="back-link" href="00-Login.html">Voltar ao login</a>
+    </div>
+  </div>
+</body>
+</html>

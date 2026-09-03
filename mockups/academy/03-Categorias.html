@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RingPro — Categorias</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../_shared/base.css">
+  <link rel="stylesheet" href="../_shared/layout.css">
+</head>
+<body>
+  <div class="dashboard-layout">
+    <aside class="sidebar">
+      <div class="sidebar-logo">RINGPRO</div>
+      <nav class="sidebar-nav">
+        <a href="00-Dashboard.html">Dashboard</a>
+        <a href="01-Alunos.html">Alunos</a>
+        <a href="02-Professores.html">Professores</a>
+        <a href="03-Categorias.html" class="active">Categorias</a>
+        <a href="04-Planos.html">Planos</a>
+        <a href="05-Financeiro.html">Financeiro</a>
+        <a href="06-Presenca.html">Presença</a>
+        <a href="07-Configuracoes.html">Configurações</a>
+        <a href="08-Notificacoes.html">Notificações</a>
+      </nav>
+    </aside>
+
+    <div class="dashboard-main">
+      <header class="topbar"><div><strong>Academia Teste</strong></div></header>
+
+      <main class="content">
+        <div class="page-header">
+          <div>
+            <h1 class="page-title">Modalidades / categorias</h1>
+            <p class="page-sub" style="margin-bottom:0;">Boxe, Muay Thai, etc.</p>
+          </div>
+          <button class="btn btn-primary" type="button">Nova categoria</button>
+        </div>
+
+        <div class="table-wrapper">
+          <table>
+            <thead><tr><th>Nome</th><th>Descrição</th><th>Alunos</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr><td>Boxe</td><td>Aulas de boxe amador e competitivo</td><td>98</td><td><span class="badge badge-success">Ativa</span></td></tr>
+              <tr><td>Muay Thai</td><td>Técnica e condicionamento</td><td>64</td><td><span class="badge badge-success">Ativa</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
+    </div>
+  </div>
+</body>
+</html>

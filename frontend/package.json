@@ -1,0 +1,50 @@
+{
+  "name": "frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "build:capacitor": "tsc -b && vite build --base ./",
+    "typecheck": "tsc -b",
+    "lint": "oxlint",
+    "test": "vitest run",
+    "test:smoke": "node ../scripts/smoke-academy-portal.mjs",
+    "test:smoke:phase1": "node ../scripts/smoke-phase1-checkpoint.mjs",
+    "test:smoke:phase2": "node ../scripts/smoke-phase2-checkpoint.mjs",
+    "test:smoke:phase3": "node ../scripts/smoke-phase3-checkpoint.mjs",
+    "test:smoke:rls": "node ../scripts/smoke-rls-checkpoint.mjs",
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui",
+    "check:practices": "node ../scripts/check-prohibited-practices.mjs",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@capacitor/app": "^7.0.2",
+    "@capacitor/core": "^7.4.2",
+    "@capacitor/push-notifications": "^7.0.7",
+    "@heroicons/react": "^2.2.0",
+    "@supabase/supabase-js": "^2.112.4",
+    "dompurify": "^3.4.14",
+    "qrcode": "^1.5.4",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "react-router-dom": "^7.18.3"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.62.1",
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/dompurify": "^3.0.5",
+    "@types/node": "^24.13.3",
+    "@types/qrcode": "^1.5.6",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.4",
+    "@vitejs/plugin-react": "^6.1.0",
+    "oxlint": "^1.79.0",
+    "tailwindcss": "^4.3.3",
+    "typescript": "~6.0.2",
+    "vite": "^8.2.2",
+    "vitest": "^3.2.7"
+  }
+}

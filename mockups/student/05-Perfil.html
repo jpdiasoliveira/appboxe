@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RingPro — Perfil</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../_shared/base.css">
+  <link rel="stylesheet" href="../_shared/layout.css">
+</head>
+<body>
+  <div class="dashboard-layout">
+    <aside class="sidebar">
+      <div class="sidebar-logo">RINGPRO</div>
+      <nav class="sidebar-nav">
+        <a href="00-Dashboard.html">Meu painel</a>
+        <a href="01-Meu-Plano.html">Meu plano</a>
+        <a href="02-Modalidades.html">Modalidades</a>
+        <a href="03-Pagamento.html">Pagamento</a>
+        <a href="04-Historico.html">Histórico</a>
+        <a href="05-Perfil.html" class="active">Perfil</a>
+      </nav>
+    </aside>
+
+    <div class="dashboard-main">
+      <header class="topbar"><div><strong>Academia Teste</strong></div></header>
+
+      <main class="content">
+        <h1 class="page-title">Meu perfil</h1>
+        <p class="page-sub">Dados pessoais e emergência</p>
+
+        <div class="card" style="max-width:520px;">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="label" for="name">Nome</label>
+              <input class="input" id="name" type="text" value="João Silva">
+            </div>
+            <div class="form-group">
+              <label class="label" for="phone">Telefone</label>
+              <input class="input" id="phone" type="tel" value="(11) 99999-0000">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="label" for="birth">Nascimento</label>
+              <input class="input" id="birth" type="date" value="1995-03-15">
+            </div>
+            <div class="form-group">
+              <label class="label" for="weight">Peso (kg)</label>
+              <input class="input" id="weight" type="number" value="78">
+            </div>
+          </div>
+          <div class="section-title" style="margin-top:8px;">Contato de emergência</div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="label" for="em-name">Nome</label>
+              <input class="input" id="em-name" type="text" value="Maria Silva">
+            </div>
+            <div class="form-group">
+              <label class="label" for="em-phone">Telefone</label>
+              <input class="input" id="em-phone" type="tel" value="(11) 98888-0000">
+            </div>
+          </div>
+          <div class="actions">
+            <button class="btn btn-primary" type="button">Salvar</button>
+          </div>
+          <div class="feedback feedback-success" style="margin-bottom:0;">Perfil atualizado.</div>
+        </div>
+      </main>
+    </div>
+  </div>
+</body>
+</html>

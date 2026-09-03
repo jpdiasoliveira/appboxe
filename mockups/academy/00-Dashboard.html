@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RingPro — Dashboard Academia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../_shared/base.css">
+  <link rel="stylesheet" href="../_shared/layout.css">
+</head>
+<body>
+  <div class="dashboard-layout">
+    <aside class="sidebar">
+      <div class="sidebar-logo">RINGPRO</div>
+      <nav class="sidebar-nav">
+        <a href="00-Dashboard.html" class="active">Dashboard</a>
+        <a href="01-Alunos.html">Alunos</a>
+        <a href="02-Professores.html">Professores</a>
+        <a href="03-Categorias.html">Categorias</a>
+        <a href="04-Planos.html">Planos</a>
+        <a href="05-Financeiro.html">Financeiro</a>
+        <a href="06-Presenca.html">Presença</a>
+        <a href="07-Configuracoes.html">Configurações</a>
+        <a href="08-Notificacoes.html">Notificações</a>
+      </nav>
+      <p style="padding:16px 20px 0;font-size:11px;color:var(--color-text-muted);">Owner · Academia Teste</p>
+    </aside>
+
+    <div class="dashboard-main">
+      <header class="topbar">
+        <div><strong>Academia Teste</strong><span class="topbar-user"> · owner@academia-teste.dev</span></div>
+        <div class="topbar-actions"><span class="badge badge-warning">3 não lidas</span><button class="btn btn-ghost" type="button">Sair</button></div>
+      </header>
+
+      <main class="content">
+        <h1 class="page-title">Dashboard</h1>
+        <p class="page-sub">Visão completa da academia — inclui financeiro</p>
+
+        <div class="kpi-grid">
+          <div class="kpi-card">
+            <div class="kpi-label">Receita do mês</div>
+            <div class="kpi-value">R$ 12.450</div>
+            <div class="kpi-trend positive">+8% vs mês anterior</div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-label">Inadimplentes</div>
+            <div class="kpi-value">5</div>
+            <div class="kpi-trend negative">+2 esta semana</div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-label">Alunos ativos</div>
+            <div class="kpi-value">142</div>
+            <div class="kpi-trend positive">+6 este mês</div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-label">Presenças hoje</div>
+            <div class="kpi-value">38</div>
+          </div>
+        </div>
+
+        <div class="content-grid">
+          <section class="card">
+            <div class="section-title">Receita por mês</div>
+            <div class="chart-placeholder">Gráfico de barras — mensalidades</div>
+          </section>
+          <section class="card">
+            <div class="section-title">Atalhos</div>
+            <div class="quick-links">
+              <a class="quick-link" href="01.1-Novo-Aluno.html">Novo aluno</a>
+              <a class="quick-link" href="06-Presenca.html">Chamada</a>
+              <a class="quick-link" href="05-Financeiro.html">Financeiro</a>
+              <a class="quick-link" href="../landing/01-Editor.html">Landing</a>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+  </div>
+</body>
+</html>

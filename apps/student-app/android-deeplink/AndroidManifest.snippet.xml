@@ -1,0 +1,7 @@
+<!-- Cole dentro de <activity> em android/app/src/main/AndroidManifest.xml (UP-504) -->
+<intent-filter>
+  <action android:name="android.intent.action.VIEW" />
+  <category android:name="android.intent.category.DEFAULT" />
+  <category android:name="android.intent.category.BROWSABLE" />
+  <data android:scheme="ringpro" android:host="convite" />
+</intent-filter>
